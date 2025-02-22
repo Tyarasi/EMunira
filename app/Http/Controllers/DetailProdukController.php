@@ -10,6 +10,15 @@ class DetailProdukController extends Controller
     public function detailProduk1() {
         return view('shop.munira-scarf-mscarf-latifa-biru.index');
     }
+    public function detailProduk2() {
+        return view('shop.munira-scarf-mscarf-latifa-hijau-mint.index');
+    }
+    public function detailProduk3() {
+        return view('shop.munira-scarf-mscarf-latifa-olive.index');
+    }
+    public function detailProduk4() {
+        return view('shop.munira-scarf-mscarf-laila-red-brown.index');
+    }
     public function detailProduk7() {
         return view('shop.ukhti-gamis-azkia-mustard.index');
     }
