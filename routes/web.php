@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DetailProdukController;
+use App\Http\Controllers\ChatbotController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -13,3 +14,6 @@ Route::get('shop/ukhti-gamis-azkia-mustard', [DetailProdukController::class, 'de
 Route::get('shop/munira-scarf-mscarf-latifa-hijau-mint', [DetailProdukController::class, 'detailProduk2'])->name('detail_produk2');
 Route::get('shop/munira-scarf-mscarf-latifa-olive', [DetailProdukController::class, 'detailProduk3'])->name('detail_produk3');
 Route::get('shop/munira-scarf-mscarf-laila-red-brown', [DetailProdukController::class, 'detailProduk4'])->name('detail_produk4');
+
+// Controller Chatbot
+Route::post('/chatbot/respond', [ChatbotController::class, 'respond']);
