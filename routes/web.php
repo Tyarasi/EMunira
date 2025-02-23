@@ -14,6 +14,9 @@ Route::get('shop/ukhti-gamis-azkia-mustard', [DetailProdukController::class, 'de
 Route::get('shop/munira-scarf-mscarf-latifa-hijau-mint', [DetailProdukController::class, 'detailProduk2'])->name('detail_produk2');
 Route::get('shop/munira-scarf-mscarf-latifa-olive', [DetailProdukController::class, 'detailProduk3'])->name('detail_produk3');
 Route::get('shop/munira-scarf-mscarf-laila-red-brown', [DetailProdukController::class, 'detailProduk4'])->name('detail_produk4');
+Route::get('shop/munira-scarf-mscarf-laila-olive', [DetailProdukController::class, 'detailProduk5'])->name('detail_produk5');
+Route::get('shop/munira-scarf-mscarf-laila-mocca', [DetailProdukController::class, 'detailProduk6'])->name('detail_produk6');
+Route::get('shop/ukhti-gamis-azkia-mocca', [DetailProdukController::class, 'detailProduk8'])->name('detail_produk6');
 
 // Controller Chatbot
 Route::post('/chatbot/respond', [ChatbotController::class, 'respond']);
