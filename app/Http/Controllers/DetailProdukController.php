@@ -31,4 +31,17 @@ class DetailProdukController extends Controller
     public function detailProduk8() {
         return view('shop.ukhti-gamis-azkia-mocca.index');
     }
+    public function detailProduk9() {
+        return view('shop.ukhti-gamis-azkia-cappucino.index');
+    }
+    public function detailProduk10() {
+        return view('shop.ukhti-gamis-azkia-army.index');
+    }
+    public function detailProduk11() {
+        return view('shop.ukhti-gamis-elnara-putih.index');
+    }
+    public function detailProduk12() {
+        return view('shop.ukhti-gamis-elnara-magenta.index');
+    }
+    
 }
