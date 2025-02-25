@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DetailProdukController;
+use App\Http\Controllers\MuniraController;
+use App\Http\Controllers\UkhtiController;
 use App\Http\Controllers\ChatbotController;
 
 Route::get('/', function () {
@@ -21,6 +23,11 @@ Route::get('shop/ukhti-gamis-azkia-cappucino', [DetailProdukController::class, '
 Route::get('shop/ukhti-gamis-azkia-army', [DetailProdukController::class, 'detailProduk10'])->name('detail_produk10');
 Route::get('shop/ukhti-gamis-elnara-putih', [DetailProdukController::class, 'detailProduk11'])->name('detail_produk11');
 Route::get('shop/ukhti-gamis-elnara-magenta', [DetailProdukController::class, 'detailProduk12'])->name('detail_produk12');
+
+//Munira View
+Route::get('shop/product-category/munira', [MuniraController::class, 'munira'])->name('munira');
+//Ukhti View
+Route::get('shop/product-category/ukhti', [UkhtiController::class, 'ukhti'])->name('ukhti');
 
 
 

@@ -35,25 +35,17 @@
             <div class="jas-col-md-8 hidden-sm hidden-xs">
                 <nav class="jas-navigation flex center-xs">
                     <ul id="jas-menu" class="jas-menu clearfix">
-                        <li id="menu-item-6507"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item">
-                            <a href="{{ route('home')}}">HOME</a></li>
-                        <li id="menu-item-5754"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children">
-                            <a href="product-category/munira/">MUNIRA</a>
-                            <ul class="sub-menu">
-                                <li id="menu-item-6205"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                                        href="product-category/bergo/index.html">BERGO</a></li>
-                                <li id="menu-item-6206"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                                        href="product-category/khimar/index.html">KHIMAR</a></li>
-                            </ul>
+                        <li class="menu-item {{ request()->routeIs('home') ? 'current-menu-item current_page_item' : '' }}">
+                            <a href="{{ route('home') }}">HOME</a>
                         </li>
-                        <li id="menu-item-5755"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
-                                href="product-category/ukhti/">UKHTI</a></li>
+                        <li class="menu-item {{ request()->routeIs('munira') ? 'current-menu-item current_page_item' : '' }}">
+                            <a href="{{ route('munira') }}">MUNIRA</a>
+                        </li>
+                        <li class="menu-item {{ request()->is('product-category/ukhti') ? 'current-menu-item current_page_item' : '' }}">
+                            <a href="{{ route('ukhti') }}">UKHTI</a>
+                        </li>
                     </ul>
+                    
                 </nav><!-- .jas-navigation -->
             </div>
         </div>
