@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DetailProdukController;
+use App\Http\Controllers\MuniraController;
+use App\Http\Controllers\UkhtiController;
 use App\Http\Controllers\ChatbotController;
 
 Route::get('/', function () {
@@ -16,7 +18,19 @@ Route::get('shop/munira-scarf-mscarf-latifa-olive', [DetailProdukController::cla
 Route::get('shop/munira-scarf-mscarf-laila-red-brown', [DetailProdukController::class, 'detailProduk4'])->name('detail_produk4');
 Route::get('shop/munira-scarf-mscarf-laila-olive', [DetailProdukController::class, 'detailProduk5'])->name('detail_produk5');
 Route::get('shop/munira-scarf-mscarf-laila-mocca', [DetailProdukController::class, 'detailProduk6'])->name('detail_produk6');
-Route::get('shop/ukhti-gamis-azkia-mocca', [DetailProdukController::class, 'detailProduk8'])->name('detail_produk6');
+Route::get('shop/ukhti-gamis-azkia-mocca', [DetailProdukController::class, 'detailProduk8'])->name('detail_produk8');
+Route::get('shop/ukhti-gamis-azkia-cappucino', [DetailProdukController::class, 'detailProduk9'])->name('detail_produk9');
+Route::get('shop/ukhti-gamis-azkia-army', [DetailProdukController::class, 'detailProduk10'])->name('detail_produk10');
+Route::get('shop/ukhti-gamis-elnara-putih', [DetailProdukController::class, 'detailProduk11'])->name('detail_produk11');
+Route::get('shop/ukhti-gamis-elnara-magenta', [DetailProdukController::class, 'detailProduk12'])->name('detail_produk12');
+
+//Munira View
+Route::get('shop/product-category/munira', [MuniraController::class, 'munira'])->name('munira');
+//Ukhti View
+Route::get('shop/product-category/ukhti', [UkhtiController::class, 'ukhti'])->name('ukhti');
+
+
+
 
 // Controller Chatbot
 Route::post('/chatbot/respond', [ChatbotController::class, 'respond']);
