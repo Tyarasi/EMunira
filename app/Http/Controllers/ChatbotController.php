@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ChatbotRule;
+use App\Models\DefaultRespon;
 
 class ChatbotController extends Controller
 {
@@ -36,18 +37,16 @@ class ChatbotController extends Controller
         $bestMatchIndex = null;
         $similarityThreshold = 75; // Ambang batas kemiripan (dalam persen)
 
-        $data = ChatbotRule::first();
+        // Ambil semua data dari tabel chatbot_rules
+        $dataList = ChatbotRule::all();
 
-        if ($data) {
-            $keywords = $data->keywords;
-            $answers = $data->answer;
+        foreach ($dataList as $data) { 
+            $keywords = $data->keywords; // Tidak perlu json_decode()
+            $answers = $data->answer;    // Tidak perlu json_decode()
 
-            foreach ($keywords as $index => $keyword) { // Loop dengan indeks
+            foreach ($keywords as $index => $keyword) { 
                 $keyword = strtolower(trim($keyword));
-
-                // Hitung kemiripan antara user input dan keyword menggunakan similar_text()
                 similar_text($userMessage, $keyword, $percent);
-
                 if ($percent > $highestSimilarity && $percent >= $similarityThreshold) {
                     $highestSimilarity = $percent;
                     $bestMatchIndex = $index;
@@ -59,15 +58,24 @@ class ChatbotController extends Controller
 
                 // Pastikan jawaban dalam format array
                 if (!is_array($matchedAnswers)) {
-                    $matchedAnswers = [$matchedAnswers]; // Ubah menjadi array jika hanya satu jawaban
+                    $matchedAnswers = [$matchedAnswers]; 
                 }
 
+                // Pilih jawaban secara acak
                 $matchedAnswer = $matchedAnswers[array_rand($matchedAnswers)];
+                break; // Berhenti mencari ke ID lain setelah menemukan jawaban
             }
         }
 
+        // Jika tidak ada jawaban yang cocok, ambil dari default_responses
         if (!$matchedAnswer) {
-            $matchedAnswer = "Maaf, saya tidak mengerti. Bisa dijelaskan lebih lanjut?";
+            $defaultResponse = DefaultRespon::first();
+            if ($defaultResponse) {
+                $defaultResponses = $defaultResponse->responses; // Tidak perlu json_decode()
+                if (!empty($defaultResponses)) {
+                    $matchedAnswer = $defaultResponses[array_rand($defaultResponses)];
+                }
+            }
         }
 
         return response()->json(['response' => $matchedAnswer]);

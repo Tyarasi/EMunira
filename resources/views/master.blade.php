@@ -157,7 +157,7 @@
         href="{{ asset('FE/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.2.3') }}"
         type="text/css" media="all">
     <link rel="stylesheet" id="yith-wcan-shortcodes-css"
-        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/shortcodes.css?ver=4.23.0" type="text/css') }}"
+        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/shortcodes.css?ver=4.23.0') }}" type="text/css"
         media="all">
     <style id="yith-wcan-shortcodes-inline-css" type="text/css">
         :root {
@@ -181,10 +181,10 @@
         }
     </style>
     <link rel="stylesheet" id="jquery-selectBox-css"
-        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0" type="text/css') }}"
+        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0') }}" type="text/css"
         media="all">
     <link rel="stylesheet" id="yith-wcwl-font-awesome-css"
-        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css?ver=4.7.0" type="text/css') }}"
+        href="{{ asset('FE/wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.css?ver=4.7.0') }}" type="text/css"
         media="all">
     <link rel="stylesheet" id="woocommerce_prettyPhoto_css-css"
         href="{{ asset('FE/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=3.1.6') }}" type="text/css"
