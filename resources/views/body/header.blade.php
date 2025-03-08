@@ -4,12 +4,12 @@
             <div class="jas-col-md-4 jas-col-sm-6 jas-col-xs-12 start-md start-sm center-xs">
                 <div class="header-text">
                     <i class="pe-7s-call"></i> +62 813-1925-6407 <i class="pe-7s-mail ml__15"></i> <a class="cg"
-                        href="mailto:sales@munira.co.id"><span
-                            class="__cf_email__">sales@munira.co.id</span></a>
+                        href="mailto:sales@munira.co.id"><span class="__cf_email__">sales@munira.co.id</span></a>
                 </div>
             </div>
             <div class="jas-col-md-4 jas-col-sm-6 jas-col-xs-12 center-md end-sm center-xs">
-                <div class="header-text">Nikmati koleksi <span class="cr">Terbaru</span>! <a href="shop/index.html">Shop
+                <div class="header-text">Nikmati koleksi <span class="cr">Terbaru</span>! <a
+                        href="shop/index.html">Shop
                         Now</a> </div>
             </div>
             <div class="jas-col-md-4 jas-col-sm-2 jas-col-xs-12 flex end-md hidden-sm hidden-xs">
@@ -22,19 +22,18 @@
         <div class="jas-row middle-xs">
             <div class="hide-md visible-sm visible-xs jas-col-sm-4 jas-col-xs-3 flex start-md flex">
                 <a href="javascript:void(0);" class="jas-push-menu-btn hide-md visible-sm visible-xs">
-                    <img src="{{ asset('FE/wp-content/themes/claue/assets/images/icons/hamburger-black.svg') }}" width="30"
-                        height="16" alt="Menu"> </a>
+                    <img src="{{ asset('FE/wp-content/themes/claue/assets/images/icons/hamburger-black.svg') }}"
+                        width="30" height="16" alt="Menu"> </a>
             </div>
             <div class="jas-col-md-2 jas-col-sm-4 jas-col-xs-6 start-md center-sm center-xs">
                 <div class="jas-branding ts__05"><a class="db" href="/"><img class="regular-logo"
-                            src="{{ asset('FE/wp-content/uploads/2017/07/logo-munira.png') }}" width="181" height="36"
-                            alt="Munira Hijab &amp; UKHTI Modest Fashion"><img class="retina-logo"
-                            src="{{ asset('FE/wp-content/uploads/2017/07/logo-munira.png') }}" width="90.5" height="18"
-                            alt="Munira Hijab &amp; UKHTI Modest Fashion"></a></div>
+                            src="{{ asset('FE/wp-content/uploads/2017/07/logo-munira.png') }}" width="181"
+                            height="36" alt="Munira Hijab &amp; UKHTI Modest Fashion"><img class="retina-logo"
+                            src="{{ asset('FE/wp-content/uploads/2017/07/logo-munira.png') }}" width="90.5"
+                            height="18" alt="Munira Hijab &amp; UKHTI Modest Fashion"></a></div>
             </div>
             <div class="jas-col-md-8 hidden-sm hidden-xs">
                 <nav class="jas-navigation flex center-xs">
-                    <ul id="jas-menu" class="jas-menu clearfix">
                         <li class="menu-item {{ request()->routeIs('home') ? 'current-menu-item current_page_item' : '' }}">
                             <a href="{{ route('home') }}">HOME</a>
                         </li>
@@ -47,6 +46,23 @@
                     </ul>
                     
                 </nav><!-- .jas-navigation -->
+            </div>
+
+            <div class="jas-col-md-2 jas-col-sm-4 jas-col-xs-3" bis_skin_checked="1">
+                <div class="jas-action flex end-xs middle-xs" bis_skin_checked="1">
+                    <a class="sf-open cb chp hidden-xs" href="javascript:void(0);"><i class="pe-7s-search"></i></a>
+                    <div class="jas-my-account hidden-xs ts__05 pr" bis_skin_checked="1"><a class="cb chp db"
+                            href="https://www.munira.co.id/my-account/"><i class="pe-7s-user"></i></a>
+                        <ul class="pa tc">
+                            <li><a class="db cg chp" href="https://www.munira.co.id/my-account/">Login / Register</a>
+                            </li>
+                        </ul>
+                    </div><a class="cb chp hidden-xs" href="https://www.munira.co.id/wishlist/"><i
+                            class="pe-7s-like"></i></a>
+                    <div class="jas-icon-cart pr" bis_skin_checked="1"><a class="cart-contents pr cb chp db"
+                            href="#" title="View your shopping cart"><i class="pe-7s-shopbag"></i><span
+                                class="pa count bgb br__50 cw tc">2</span></a></div>
+                </div><!-- .jas-action -->
             </div>
         </div>
         <!-- .jas-row -->
@@ -77,7 +93,8 @@
             <ul id="menu-main-menu" class="menu">
                 <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item active">
-                    <a href="{{ route('home')}}"><span>HOME</span></a></li>
+                    <a href="{{ route('home') }}"><span>HOME</span></a>
+                </li>
                 <li
                     class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children has-sub">
                     <a href="product-category/munira/"><span>MUNIRA</span></a>
