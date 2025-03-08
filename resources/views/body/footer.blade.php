@@ -107,7 +107,7 @@
         <div class="jas-container pr tc">
             Copyright © 2017 <span class="cp">MUNIRA</span> all rights reserved. </div>
     </div>
-  
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
     <button id="chatbot-toggler">
@@ -139,7 +139,15 @@
                     </path>
                 </svg>
                 <div class="message-text">
-                    Munira Talk Here
+                    <b>Hai, bestie! 🌸 Selamat datang di Munira! Aku siap bantu kamu cari scarf kece ✨ Pilih salah satu
+                        info berikut ini, ketik ulang aja ya!👇</b>
+                    <br><br>
+                    1️⃣ <b>Promo diskon Munira</b> 💰<br>
+                    2️⃣ <b>Info diskon ongkir hari ini</b><br>
+                    3️⃣ <b>Info platform pengiriman barang kami</b> 📦<br>
+                    4️⃣ <b>Info pesanan Anda</b> 📜<br>
+                    6️⃣ <b>Bagaimana cara checkout?</b> 🛒<br><br>
+                    <b>Kalau nggak nemu yang kamu cari, tanya aku aja ya! 💬</b>
                 </div>
             </div>
         </div>
@@ -492,7 +500,7 @@
 
             messageInput.value = '';
 
-            // Kirim pesan ke server menggunakan AJAX
+            // Kirim pesan ke server
             fetch('/chatbot/respond', {
                     method: 'POST',
                     headers: {
