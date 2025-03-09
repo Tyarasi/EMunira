@@ -31,7 +31,8 @@ Route::get('shop/product-category/munira', [MuniraController::class, 'munira'])-
 //Ukhti View
 Route::get('shop/product-category/ukhti', [UkhtiController::class, 'ukhti'])->name('ukhti');
 //Checkout View
-Route::get('shop/checkout', [CheckoutController::class, 'checkout'])->name('checkout');
+Route::get('shop/munira-scarf-mscarf-latifa-biru/checkout', [CheckoutController::class, 'checkout1'])->name('checkout1');
+
 
 
 

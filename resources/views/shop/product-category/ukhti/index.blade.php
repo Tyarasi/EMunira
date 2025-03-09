@@ -54,17 +54,7 @@
                         <a href="#" class="pr hidden-sm four mr__10 active" data-col="3"></a>
                         <a href="#" class="pr hidden-sm six" data-col="2"></a>
                     </div>
-                    <form class="woocommerce-ordering" method="get">
-                        <select name="orderby" class="orderby" aria-label="Shop order">
-                            <option value="popularity">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="date" selected>Sort by latest</option>
-                            <option value="price">Sort by price: low to high</option>
-                            <option value="price-desc">Sort by price: high to low</option>
-                        </select>
-                        <input type="hidden" name="paged" value="1">
-                        <input type="hidden" name="simply_static_page" value="3334">
-                    </form>
+                   
                 </div>
             </div>
 
@@ -291,8 +281,7 @@
                                         class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                 <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                         href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                            </div> <span class="badge tc fs__12">
-                                <span class="sold-out pa db right">Sold Out</span></span>
+                            </div> 
                             <div class="product-image-flip">
                                 <a href="/shop/ukhti-gamis-elnara-putih/"><img width="600" height="800"
                                         src="{{asset ('FE/wp-content/uploads/2023/07/ELNARA-PUT-WEB-4.jpg') }}"
@@ -343,8 +332,7 @@
                                         class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                 <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                         href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                            </div> <span class="badge tc fs__12">
-                                <span class="sold-out pa db right">Sold Out</span></span>
+                            </div> 
                             <div class="product-image-flip">
                                 <a href="/shop/ukhti-gamis-elnara-magenta/"><img width="600" height="800"
                                         src="{{asset ('FE/wp-content/uploads/2023/07/ELNARA-MAG-WEB-3.jpg') }}"

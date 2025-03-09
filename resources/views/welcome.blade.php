@@ -904,17 +904,7 @@
 									<a href="#" class="pr hidden-sm four mr__10 active" data-col="3"></a>
 									<a href="#" class="pr hidden-sm six" data-col="2"></a>
 								</div>
-								<form class="woocommerce-ordering" method="get">
-									<select name="orderby" class="orderby" aria-label="Shop order">
-										<option value="popularity">Sort by popularity</option>
-										<option value="rating">Sort by average rating</option>
-										<option value="date" selected>Sort by latest</option>
-										<option value="price">Sort by price: low to high</option>
-										<option value="price-desc">Sort by price: high to low</option>
-									</select>
-									<input type="hidden" name="paged" value="1">
-									<input type="hidden" name="simply_static_page" value="3231">
-								</form>
+								
 							</div>
 						</div>
 

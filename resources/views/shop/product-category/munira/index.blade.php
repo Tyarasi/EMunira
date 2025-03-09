@@ -52,22 +52,12 @@
                             <a href="#" class="pr hidden-sm four mr__10 active" data-col="3"></a>
                             <a href="#" class="pr hidden-sm six" data-col="2"></a>
                         </div>
-                        <form class="woocommerce-ordering" method="get">
-                            <select name="orderby" class="orderby" aria-label="Shop order">
-                                <option value="popularity">Sort by popularity</option>
-                                <option value="rating">Sort by average rating</option>
-                                <option value="date" selected>Sort by latest</option>
-                                <option value="price">Sort by price: low to high</option>
-                                <option value="price-desc">Sort by price: high to low</option>
-                            </select>
-                            <input type="hidden" name="paged" value="1">
-                            <input type="hidden" name="simply_static_page" value="3333">
-                        </form>
+
                     </div>
                 </div>
 
                 <div class="products jas-row">
-                    
+
                     <div
                         class="jas-col-md-3 jas-col-sm-4 jas-col-xs-6 mt__30 post-7049 product type-product status-publish has-post-thumbnail product_cat-munira product_cat-scarf first outofstock shipping-taxable purchasable product-type-simple">
                         <div class="product-inner pr">
@@ -78,12 +68,11 @@
                                             class="add_to_wishlist cw"><i class="fa fa-heart-o"></i></a><i
                                             class="fa fa-spinner fa-pulse ajax-loading pa" style="visibility:hidden"></i>
                                     </div>
-                                    <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a
-                                            class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
+                                    <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a class="chp"
+                                            href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-latifa-biru/"><img width="600" height="800"
                                             src="{{ asset('FE/wp-content/uploads/2023/08/LATIFA-BIR-WEB-4.jpg') }}"
@@ -132,8 +121,7 @@
                                             class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-latifa-hijau-mint/"><img width="600"
                                             height="800"
@@ -183,8 +171,7 @@
                                             class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-latifa-olive/"><img width="600" height="800"
                                             src="{{ asset('FE/wp-content/uploads/2023/08/LATIFA-OL-WEB-2.jpg') }}"
@@ -233,8 +220,7 @@
                                             class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-laila-red-brown/"><img width="600"
                                             height="800"
@@ -284,8 +270,7 @@
                                             class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-laila-olive/"><img width="600" height="800"
                                             src="{{ asset('FE/wp-content/uploads/2023/08/LAILA-OL-WEB-1.jpg') }}"
@@ -333,8 +318,7 @@
                                             class="chp" href="/wishlist/"><i class="fa fa-heart"></i></a></div>
                                     <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none"><a
                                             href="/wishlist/" class="chp"><i class="fa fa-heart"></i></a></div>
-                                </div> <span class="badge tc fs__12">
-                                    <span class="sold-out pa db right">Sold Out</span></span>
+                                </div> 
                                 <div class="product-image-flip">
                                     <a href="/shop/munira-scarf-mscarf-laila-mocca/"><img width="600" height="800"
                                             src="{{ asset('FE/wp-content/uploads/2023/08/LAILA-MOC-WEB-2.jpg') }}"

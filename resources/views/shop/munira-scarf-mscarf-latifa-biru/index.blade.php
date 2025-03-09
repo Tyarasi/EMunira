@@ -142,7 +142,10 @@
                             <p>Harga : 239.000 <strong>include box</strong></p>
                         </div>
                         <div class="btn-atc">
-                            <p class="stock out-of-stock">Out of stock</p>
+                            <div class="woocommerce-variation-add-to-cart variations_button woocommerce-variation-add-to-cart-enabled">
+                                <div class="quantity pr fl mr__10">
+                            </div>
+                            <a href ="{{route('checkout1')}}" class="single_add_to_cart_button button alt enabled wc-variation-selection-needed">Checkout</a>
                             <div class="extra-link mt__25 fwsb">
                                 <a class="cd chp jas-magnific-image"
                                     href="http://janstudio.net/claue/demo{{ asset('FE/wp-content/uploads/2017/01/sizecharts.png') }}">Size
